@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/images/logo.png">
+  <MayNav msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MayNav from './components/Nav/MyNav.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MayNav
   }
 }
 </script>
