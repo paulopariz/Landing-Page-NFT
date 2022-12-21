@@ -1,5 +1,28 @@
-@import "@/assets/scss/index.scss";
+@import "src/assets/scss/index.scss";
 
-h1{
-    color: $cor1;
+nav {
+    margin-top: 1.4375rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            line-height: 19px;
+            font-weight: 400;
+        }
+
+        button {
+            background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+            padding: 16px 32px;
+            width: 149px;
+            height: 51px;
+            border-radius: 66px;
+            font-weight: 400;
+        }
+    }
 }

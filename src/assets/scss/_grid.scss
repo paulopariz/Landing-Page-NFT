@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    // background-color: #2a1d51;
+    @media(max-width: 1200px) {
+        max-width: 1140px;
+    }
+    @media(max-width: 992px){
+        max-width: 960px;
+    }
+}
