@@ -1,0 +1,101 @@
+@import "src/assets/scss/index.scss";
+
+.eclipse {
+    position: absolute;
+    width: 555px;
+    height: 555px;
+    left: -87px;
+    top: -41px;
+    border-radius: 50%;
+    background: rgba(214, 34, 218, 0.59);
+    filter: blur(247px);
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    .right {
+        img {
+            width: 410px;
+        }
+    }
+
+    .left {
+        .title {
+            display: flex;
+            font-weight: 800;
+            line-height: 5.9375rem;
+            letter-spacing: -2px;
+
+            h1 {
+                font-size: 90px;
+                position: relative;
+
+                span {
+                    background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                }
+
+                .star {
+                    display: flex;
+                }
+            }
+
+        }
+
+        .button-text {
+            display: flex;
+            margin-top: 2rem;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            button {
+                width: 120px;
+                height: 120px;
+                background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+                border-radius: 50%;
+                font-weight: 600;
+            }
+
+            p {
+                max-width: 418px;
+                margin-right: 100px;
+                line-height: 26px;
+                color: rgba(255, 255, 255, 0.84);
+            }
+        }
+    }
+}
+
+.numbers {
+    margin-top: 5rem;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 1.875rem;
+
+        li {
+            span {
+                font-size: 15px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.company {
+    margin-top: 4.0625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

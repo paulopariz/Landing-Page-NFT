@@ -1,24 +1,36 @@
 <template>
   <div class="container">
-    <MayNav />
+
+    <MyNav />
+
+    <MyHeader />
+
   </div>
 </template>
 
 <script>
-import MayNav from './components/Nav/MyNav.vue'
+import MyNav from './components/Nav/MyNav.vue'
+import MyHeader from './components/Header/MyHeader.vue'
+
 
 export default {
   name: 'App',
+
   components: {
-    MayNav
+    MyNav,
+    MyHeader,
+
   }
 }
 </script>
 
 
+
 <!--RESET-->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap');
+
+
   *{
     margin: 0;
     padding: 0;
@@ -47,4 +59,5 @@ img{
 body{
   background: #110929;
 }
+
 </style>
