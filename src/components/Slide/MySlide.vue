@@ -1,11 +1,13 @@
 <template>
 
 <div class="desktop">
-  <button>Hope Ape</button>
-  <button>Abstract</button>
-  <button>Mongkey</button>
-  <button>Cars</button>
-  <button>Art</button>
+  <div class="container">
+    <button>Hope Ape</button>
+    <button>Abstract</button>
+    <button>Mongkey</button>
+    <button>Cars</button>
+    <button>Art</button>
+  </div>
 </div>
 
 <div class="mobile">
@@ -50,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/_buttons.scss";
+@import "../../assets/scss/index.scss";
 
 .swiper-slide{
   background-color: red;
@@ -61,15 +63,17 @@ export default {
 }
 
 .desktop{
-  margin-top: 35px;
-  display: flex;
-  gap: 22px;
-
-  button{
-    @include buttons;
-    background: #39324D;
-    &:focus{
-      background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+  .container{
+    margin-top: 35px;
+    display: flex;
+    gap: 22px;
+  
+    button{
+      @include buttons;
+      background: #39324D;
+      &:focus{
+        background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+      }
     }
   }
 }
