@@ -47,12 +47,12 @@
     </div>
 
     <div class="company">
-        <img src="../../assets/images/coinbaseLogo.svg">
-        <img src="../../assets/images/spotifyLogo.svg">
-        <img src="../../assets/images/slackLogo.svg">
-        <img src="../../assets/images/dropboxLogo.svg">
-        <img src="../../assets/images/webflowLogo.svg">
-        <img src="../../assets/images/zoomLogo.svg">
+        <img src="../../assets/images/Company/coinbaseLogo.svg">
+        <img src="../../assets/images/Company/spotifyLogo.svg">
+        <img src="../../assets/images/Company/slackLogo.svg">
+        <img src="../../assets/images/Company/dropboxLogo.svg">
+        <img src="../../assets/images/Company/webflowLogo.svg">
+        <img src="../../assets/images/Company/zoomLogo.svg">
     </div>
 
 </div>

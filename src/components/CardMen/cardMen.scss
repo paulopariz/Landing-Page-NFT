@@ -1,0 +1,49 @@
+@import "src/assets/scss/index.scss";
+
+
+.container {
+    h1 {
+        @include titles;
+        margin-top: 5.9375rem;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 2.125rem;
+
+        .group-creator {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            gap: 13px;
+            width: 387px;
+            height: 100px;
+            background: #251163;
+            border-radius: 14px;
+
+            h2 {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 26px;
+                padding-bottom: 13px;
+            }
+
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+        button{
+            @include buttons;
+            font-size: 14px;   
+        }
+
+    }
+}

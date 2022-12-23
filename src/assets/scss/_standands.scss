@@ -9,7 +9,7 @@
 
 /*ECLIPSE*/
 @mixin eclipses {
-    position: absolute;
+    position: relative;
     width: 555px;
     height: 555px;
     left: -87px;
@@ -17,6 +17,8 @@
     border-radius: 50%;
     background: rgba(214, 34, 218, 0.59);
     filter: blur(247px);
+    z-index: -1;
+    float: right;
 }
 
 /*SECTION CREATE NFT*/

@@ -12,14 +12,14 @@
 
             <div class="cards">
                 <div class="container">
-                    <img src="./assets/images/card1.png">
-                    <img src="./assets/images/card2.png">
-                    <img src="./assets/images/card3.png">
-                    <img src="./assets/images/card5.png">
-                    <img src="./assets/images/card5.png">
-                    <img src="./assets/images/card6.png">
-                    <img src="./assets/images/card7.png">
-                    <img src="./assets/images/card8.png">
+                    <img src="./assets/images/Cards/card1.png">
+                    <img src="./assets/images/Cards/card2.png">
+                    <img src="./assets/images/Cards/card3.png">
+                    <img src="./assets/images/Cards/card5.png">
+                    <img src="./assets/images/Cards/card5.png">
+                    <img src="./assets/images/Cards/card6.png">
+                    <img src="./assets/images/Cards/card7.png">
+                    <img src="./assets/images/Cards/card8.png">
                 </div>
 
                 <button>View More</button>
@@ -52,7 +52,6 @@
     </div>
 
 
-
     <div class="partTwo">
         <div class="container">
             <h1>Create Your Sell NFT</h1>
@@ -74,9 +73,21 @@
                     <p>This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
                 </div>
             </section>
-            
+
+        </div>
+
+
+        
+
+    </div>
+
+    <div>
+        <div class="container">
+            <CardMen />
         </div>
     </div>
+
+    <div class="eclipse2" />
 
 
 </template>
@@ -85,6 +96,7 @@
     import MyNav from './components/Nav/MyNav.vue'
     import MyHeader from './components/Header/MyHeader.vue'
     import MySlide from './components/Slide/MySlide.vue'
+    import CardMen from './components/CardMen/CardMen.vue'
 
     export default {
         name: 'App',
@@ -92,7 +104,8 @@
         components: {
             MyNav,
             MyHeader,
-            MySlide
+            MySlide,
+            CardMen
         }
     }
 </script>
@@ -197,15 +210,12 @@
     }
 
 
-
     .partTwo {
         margin-top: 150px;
-
-        .container{
+        .container{   
             h1 {
                 @include titles;
             }
-
             section{
                 margin-top: 2.1875rem;
                 display: flex;
@@ -215,10 +225,12 @@
                     @include createNft;
                 }
             }
-            
         }
-
-
-
     }
+
+    .eclipse2{
+    @include eclipses;
+    top: -1000px;
+    left: 0px
+}
 </style>
