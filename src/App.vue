@@ -10,19 +10,24 @@
 
             <MySlide />
 
-            <div class="cards">
-                <div class="container">
-                    <img src="./assets/images/Cards/card1.png">
-                    <img src="./assets/images/Cards/card2.png">
-                    <img src="./assets/images/Cards/card3.png">
-                    <img src="./assets/images/Cards/card5.png">
-                    <img src="./assets/images/Cards/card5.png">
-                    <img src="./assets/images/Cards/card6.png">
-                    <img src="./assets/images/Cards/card7.png">
-                    <img src="./assets/images/Cards/card8.png">
-                </div>
+            <div>
+                <div class="cards">
 
-                <button>View More</button>
+                    <div class="container">
+                        <div
+                        v-for="(obj) in cards"
+                        v-bind:key="obj"
+                        >
+                        
+                            <img
+                            v-if="obj.card"
+                            :src="obj.card"
+                            >
+                        </div>
+                    </div>
+
+                    <button>View More</button>
+                </div>
             </div>
         </div>
 
@@ -112,9 +117,41 @@
             MySlide,
             CardMen,
             JoinCommunity,
-    
-}
-    }
+        },
+
+            data(){
+                return{
+                    cards: [{
+                        "card": require("../src/assets/images/Cards/card1.png"),
+                        },
+                        {
+                        "card": require("../src/assets/images/Cards/card2.png"),
+                        },
+                        {
+                        "card": require("../src/assets/images/Cards/card3.png"),
+                        },
+                        {
+                        "card": require("../src/assets/images/Cards/card4.png"),
+                        },
+                        {
+                        "card": require("../src/assets/images/Cards/card5.png"),
+                        },
+                        {
+                        "card": require("../src/assets/images/Cards/card6.png"),
+                        },
+                        {
+                        "card": require("../src/assets/images/Cards/card7.png"),
+                        },
+                        {
+                        "card": require("../src/assets/images/Cards/card8.png"),
+                        },
+                        
+                    ]
+                }
+            }
+
+        }
+   
 </script>
 
 <style lang="scss">
