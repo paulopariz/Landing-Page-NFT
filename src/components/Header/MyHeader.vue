@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="eclipse" />
+    <div class="eclipse1" />
 
     <header>
 

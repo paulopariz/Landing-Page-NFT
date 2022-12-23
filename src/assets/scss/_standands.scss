@@ -1,0 +1,46 @@
+/*H1*/
+@mixin titles{
+    font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: -0.02em;
+}
+
+
+/*ECLIPSE*/
+@mixin eclipses {
+    position: absolute;
+    width: 555px;
+    height: 555px;
+    left: -87px;
+    top: -41px;
+    border-radius: 50%;
+    background: rgba(214, 34, 218, 0.59);
+    filter: blur(247px);
+}
+
+/*SECTION CREATE NFT*/
+@mixin createNft{
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    width: 24.125rem;
+    height: 15.375rem;
+    background: #251163;
+    border-radius: 14px;
+    img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.625rem;
+    }
+    p{
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: rgba(227, 225, 225, 0.918);
+    }
+}

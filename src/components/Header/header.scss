@@ -1,6 +1,6 @@
 @import "src/assets/scss/index.scss";
 
-.eclipse {
+@mixin eclipses {
     position: absolute;
     width: 555px;
     height: 555px;
@@ -9,6 +9,9 @@
     border-radius: 50%;
     background: rgba(214, 34, 218, 0.59);
     filter: blur(247px);
+}
+.eclipse1{
+    @include eclipses;
 }
 
 header {
