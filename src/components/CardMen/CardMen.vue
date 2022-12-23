@@ -37,12 +37,12 @@
                 names: [{
                         "name": "Eka Prakasa",
                         "img": require("../../assets/images/Mens/men1.png"),
-                        "numbers": "13.2K"
+                        "numbers": "14.5K"
                     },
                     {
                         "name": "Emil Tirtayasa Sinaga ",
                         "img": require("../../assets/images/Mens/men2.png"),
-                        "numbers": "13.1K"
+                        "numbers": "14.2K"
                     },
                     {
                         "name": "Dodo Opung Utama",
@@ -52,17 +52,17 @@
                     {
                         "name": "Emil Nainggolan",
                         "img": require("../../assets/images/Mens/men4.png"),
-                        "numbers": "14.2K"
+                        "numbers": "13.2K"
                     },
                     {
                         "name": "Eja Nainggolan",
                         "img": require("../../assets/images/Mens/men5.png"),
-                        "numbers": "13.0K"
+                        "numbers": "13.1K"
                     },
                     {
                         "name": "Among Suryono",
                         "img": require("../../assets/images/Mens/men6.png"),
-                        "numbers": "14.5K"
+                        "numbers": "13.0K"
                     }
                 ]
             }

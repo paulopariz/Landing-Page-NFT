@@ -29,6 +29,7 @@
     </div>
 
     <div class="live-aucition">
+
         <marquee scrollamount="20">
             <div>
                 <section>
@@ -49,6 +50,7 @@
                 </section>
             </div>
         </marquee>
+
     </div>
 
 
@@ -87,8 +89,10 @@
         </div>
     </div>
 
-    <div class="eclipse2" />
 
+    <div class="container">
+        <JoinCommunity />
+    </div>
 
 </template>
 
@@ -97,6 +101,7 @@
     import MyHeader from './components/Header/MyHeader.vue'
     import MySlide from './components/Slide/MySlide.vue'
     import CardMen from './components/CardMen/CardMen.vue'
+    import JoinCommunity from './components/Join/JoinCommunity.vue'
 
     export default {
         name: 'App',
@@ -105,8 +110,10 @@
             MyNav,
             MyHeader,
             MySlide,
-            CardMen
-        }
+            CardMen,
+            JoinCommunity,
+    
+}
     }
 </script>
 
@@ -228,9 +235,4 @@
         }
     }
 
-    .eclipse2{
-    @include eclipses;
-    top: -1000px;
-    left: 0px
-}
 </style>

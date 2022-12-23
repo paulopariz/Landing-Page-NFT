@@ -1,0 +1,93 @@
+@import "src/assets/scss/index.scss";
+
+.join {
+    margin: auto;
+    margin-top: 8.125rem;
+    width: 75rem;
+    height: 18.125rem;
+    background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .eclipseJoin1 {
+        @include eclipses;
+        left: 0px;
+        top: 0px;
+        filter: blur(0px);
+        z-index: 0;
+        float: left;
+        width: 227px;
+        height: 227px;
+        left: -79px;
+        top: -34px;
+        background: rgba(101, 0, 118, 0.3);
+    }
+
+    .eclipseJoin2 {
+        @include eclipses;
+        width: 542px;
+        left: 329px;
+        top: 144px;
+        border: 1px solid #FFFFFF;
+        background: none;
+        filter: blur(0px);
+        float: none;
+        z-index: 0;
+    }
+
+    section {
+
+        h1 {
+            width: 32.625rem;
+            height: 3.8125rem;
+            left: 21.1875rem;
+            top: 4.375rem;
+            font-weight: 700;
+            font-size: 3.125rem;
+            line-height: 3.8125rem;
+            position: absolute;
+        }
+
+        button {
+            @include buttons;
+            background: #fff;
+            color: #1C51FE;
+            left: 32.625rem;
+            top: 10.5rem;
+            position: absolute;
+            &:hover{
+                background: rgba(255, 253, 253, 0.955);
+            }
+        }
+    }
+
+    .eclipseJoin3{
+        @include eclipses;
+        position: absolute;
+        left: 53.0625rem;
+        top: -34px;
+        background: #8114D5;
+        filter: blur(0px);
+        z-index: 0;
+
+        .btc{
+            position: absolute;
+            width: 205.75px;
+            height: 205.75px;
+            left: 2rem;
+            top: 9.66px;
+        }
+        .eth{
+            position: absolute;
+            left: 2.875rem;
+            top: 10.625rem;
+        }
+        .bnb{
+            position: absolute;
+            left: 11.25rem;
+            top: 7.6875rem;
+     
+        }
+    }
+}
