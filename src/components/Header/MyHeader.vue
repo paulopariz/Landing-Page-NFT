@@ -47,12 +47,15 @@
     </div>
 
     <div class="company">
-        <img src="../../assets/images/Company/coinbaseLogo.svg">
-        <img src="../../assets/images/Company/spotifyLogo.svg">
-        <img src="../../assets/images/Company/slackLogo.svg">
-        <img src="../../assets/images/Company/dropboxLogo.svg">
-        <img src="../../assets/images/Company/webflowLogo.svg">
-        <img src="../../assets/images/Company/zoomLogo.svg">
+        <div
+        v-for="(obj) in companys"
+        v-bind:key="obj"
+        >
+            <img
+            v-if="obj.img"
+            :src="obj.img">
+        
+        </div>
     </div>
 
 </div>
@@ -64,7 +67,25 @@ export default {
 
     data() {
         return {
-
+            companys: [{
+                "img": require("../../assets/images/Company/coinbaseLogo.svg"),
+                },
+                {
+                "img": require("../../assets/images/Company/spotifyLogo.svg"),
+                },
+                {
+                "img": require("../../assets/images/Company/slackLogo.svg"),
+                },
+                {
+                "img": require("../../assets/images/Company/dropboxLogo.svg"),
+                },
+                {
+                "img": require("../../assets/images/Company/webflowLogo.svg"),
+                },
+                {
+                "img": require("../../assets/images/Company/zoomLogo.svg"),
+                },
+            ]
         }
     }
 }
