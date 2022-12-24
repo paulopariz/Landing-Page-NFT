@@ -97,6 +97,8 @@
 
     <div class="container">
         <JoinCommunity />
+
+        <MyFooter />
     </div>
 
 </template>
@@ -107,17 +109,19 @@
     import MySlide from './components/Slide/MySlide.vue'
     import CardMen from './components/CardMen/CardMen.vue'
     import JoinCommunity from './components/Join/JoinCommunity.vue'
+    import MyFooter from './components/Footer/MyFooter.vue'
 
     export default {
         name: 'App',
 
         components: {
-            MyNav,
-            MyHeader,
-            MySlide,
-            CardMen,
-            JoinCommunity,
-        },
+    MyNav,
+    MyHeader,
+    MySlide,
+    CardMen,
+    JoinCommunity,
+    MyFooter,
+},
 
             data(){
                 return{

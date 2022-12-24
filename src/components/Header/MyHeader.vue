@@ -47,14 +47,16 @@
     </div>
 
     <div class="company">
-        <div
+        <div 
         v-for="(obj) in companys"
         v-bind:key="obj"
         >
-            <img
-            v-if="obj.img"
-            :src="obj.img">
-        
+
+            <img 
+            v-if="obj.img" 
+            :src="obj.img" 
+            :alt="obj.name">
+
         </div>
     </div>
 
@@ -68,22 +70,28 @@ export default {
     data() {
         return {
             companys: [{
-                "img": require("../../assets/images/Company/coinbaseLogo.svg"),
+                    "img": require("../../assets/images/Company/coinbaseLogo.svg"),
+                    "name": "Coinbase"
                 },
                 {
-                "img": require("../../assets/images/Company/spotifyLogo.svg"),
+                    "img": require("../../assets/images/Company/spotifyLogo.svg"),
+                    "name": "Spotify"
                 },
                 {
-                "img": require("../../assets/images/Company/slackLogo.svg"),
+                    "img": require("../../assets/images/Company/slackLogo.svg"),
+                    "name": "Slack"
                 },
                 {
-                "img": require("../../assets/images/Company/dropboxLogo.svg"),
+                    "img": require("../../assets/images/Company/dropboxLogo.svg"),
+                    "name": "Dropbox"
                 },
                 {
-                "img": require("../../assets/images/Company/webflowLogo.svg"),
+                    "img": require("../../assets/images/Company/webflowLogo.svg"),
+                    "name": "Webflow"
                 },
                 {
-                "img": require("../../assets/images/Company/zoomLogo.svg"),
+                    "img": require("../../assets/images/Company/zoomLogo.svg"),
+                    "name": "Zoom"
                 },
             ]
         }
