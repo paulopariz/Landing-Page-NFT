@@ -38,6 +38,7 @@ nav {
                 .drop {
                     display: block;
                     position: absolute;
+                    z-index: 10;
                     width: 235px;
                     height: 225px;
                     background: #110929d8;

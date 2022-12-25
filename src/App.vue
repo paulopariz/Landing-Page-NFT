@@ -278,7 +278,7 @@
     }
 
 
- header,.numbers, .company, .gallery, .live-aucition, .partTwo, .cardsMen, .join, footer {
+ .numbers, .company, .gallery, .live-aucition, .partTwo, .cardsMen, .join, footer {
     display: none;
 }
 </style>
