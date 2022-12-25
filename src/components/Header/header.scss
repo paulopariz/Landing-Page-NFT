@@ -9,9 +9,24 @@
     border-radius: 50%;
     background: rgba(214, 34, 218, 0.59);
     filter: blur(247px);
+    @media(max-width: 768px){
+        display: none;
+    }
 }
 .eclipse1{
     @include eclipses;
+    z-index: -1;
+}
+.eclipse2{
+    @include eclipses;
+    width: 390px;
+    height: 390px;
+    z-index: -1;
+    top: 3935px;
+    left: -173px;
+
+    background: rgba(34, 86, 218, 0.59);
+
 }
 
 header {

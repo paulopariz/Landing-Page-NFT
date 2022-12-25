@@ -1,6 +1,5 @@
 <template>
-    <footer>
-       
+    <footer>  
         <div class="container">
             <div class="left">
                 <img src="../../assets/images/ApolloNFT.svg" alt="LOGO" class="logo">

@@ -3442,6 +3442,11 @@
   dependencies:
     "duplexer" "^0.1.2"
 
+"hamburgers@^1.2.1":
+  "integrity" "sha512-uFuVVF7/MeUtRWrA+S1FGGo4iVi7RgPzZAmljBnSeDh4snOZzaQ+oB6CI1m4vKD5RGz9s70ufgiJLxgivqA26Q=="
+  "resolved" "https://registry.npmjs.org/hamburgers/-/hamburgers-1.2.1.tgz"
+  "version" "1.2.1"
+
 "handle-thing@^2.0.0":
   "integrity" "sha512-9Qn4yBxelxoh2Ow62nP+Ka/kMnOXRi8BXnRaUwezLNhqelnN49xKz4F/dPP8OYLxLxq6JDtZb2i9XznUQbNPTg=="
   "resolved" "https://registry.npmmirror.com/handle-thing/-/handle-thing-2.0.1.tgz"

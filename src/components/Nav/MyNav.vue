@@ -13,15 +13,25 @@
       </ul>
      </div>
 
-     <button>Contact Us</button>
+     <section>
+       <button class="contact">Contact Us</button>
+       <NavMobile />
+     </section>
     </div>
   </nav>
+
 
 </template>
 
 <script>
+import NavMobile from './NavMobile.vue'
+
   export default {
     name: 'MyNav',
+
+    components:{
+      NavMobile
+    },
 
     data(){
       return{

@@ -89,7 +89,7 @@
     </div>
 
     <div>
-        <div class="container">
+        <div class="">
             <CardMen />
         </div>
     </div>
@@ -193,6 +193,7 @@
         background: #110929;
     }
 
+
     /*CONTENT*/
 
     .gallery {
@@ -276,4 +277,8 @@
         }
     }
 
+
+ header,.numbers, .company, .gallery, .live-aucition, .partTwo, .cardsMen, .join, footer {
+    display: none;
+}
 </style>

@@ -1,27 +1,27 @@
 <template>
     
-    <div class="container">
-        <h1>Creator of The Week</h1>
-        <section>
-            <div
-            v-for="(obj) in names"
-            v-bind:key="obj">
-                <div class="group-creator">
-                    <div class="">
-                        <img v-if="obj.img" :src="obj.img" />
-                    </div>
-                    <div>
-                        <h2>{{ obj.name }}</h2>
-                        <span>{{ obj.numbers }}</span>
+    <div class="cardsMen">
+        <div class="container">
+            <h1>Creator of The Week</h1>
+            <section>
+                <div
+                v-for="(obj) in names"
+                v-bind:key="obj">
+                    <div class="group-creator">
+                        <div class="">
+                            <img v-if="obj.img" :src="obj.img" />
+                        </div>
+                        <div>
+                            <h2>{{ obj.name }}</h2>
+                            <span>{{ obj.numbers }}</span>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <div class="btn">
+                <button>Watch Video</button>
             </div>
-        </section>
-
-        <div class="btn">
-            <button>Watch Video</button>
         </div>
-
     </div>
 
 

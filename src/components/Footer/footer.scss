@@ -2,6 +2,10 @@
 
 footer{
 
+    .eclipse2{
+        @include eclipses;
+    }
+
     .container{
         display: flex;
         align-items: center;
