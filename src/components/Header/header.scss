@@ -119,7 +119,7 @@ header {
             .title{
                 line-height: 4.1rem;
                 h1{
-                    font-size: 60px;
+                    font-size: 3.4375rem;
                 }
             }
             .button-text{
@@ -145,8 +145,14 @@ header {
             .title{
                 line-height: 4.9rem;
                 justify-content: center;
+                letter-spacing: 0px;
                 h1{
                     font-size: 4.5625rem;
+                    .star{
+                        img{
+                            display: none;
+                        }
+                    }
                 }
             }
             .button-text{
@@ -155,7 +161,7 @@ header {
                 button{
                     width: 100%;
                     height: 58px;
-                    font-size: 19px;
+                    font-size: 15px;
                 }
                 p{
                     font-size: 21px;
@@ -170,6 +176,62 @@ header {
             justify-content: center;
             img{ 
                 width: 28.9375rem;
+            }
+        }
+    }
+    @media(max-width: 576px){
+        .left{
+            .title{
+                h1{
+                    font-size: 3.5625rem;
+                }
+            }
+            .button-text{
+                text-align: justify;
+
+                p{
+                    max-width: 455px;
+                    font-size: 19px;
+                    line-height: 31px;
+                }
+            }
+        }
+        .right{
+            margin-top: 70px;
+            img{ 
+                width: 25.9375rem;
+            }
+        }
+    }
+    @media(max-width: 484px){
+        .left{
+            .title{
+                h1{
+                    font-size: 44.7778px;
+                    line-height: 45px;
+                    letter-spacing: -0.888889px;
+                }
+            }
+            .button-text{
+                text-align: justify;
+
+                p{
+                    font-size: 14px;
+                    padding: 14px;
+                    line-height: 27px
+                }
+                button{
+                    padding: 16px 32px;
+                    gap: 10px;
+                    margin: auto;
+                    width: 327px;
+                    height: 51px;
+                }
+            }
+        }
+        .right{
+            img{ 
+                width: 20.9375rem;
             }
         }
     }
@@ -192,7 +254,18 @@ header {
                 font-size: 28px;
             }
         }
-    }
+        @media(max-width:768px){ 
+            justify-content: space-around;
+
+        }
+        @media (max-width: 484px){ 
+            li{ 
+                h2{ 
+                    font-size: 30px;
+                }
+            } 
+        }
+        }
 }
 
 .company {
@@ -200,4 +273,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width: 992px){
+        img{
+            width: 75%;
+            margin: auto;
+        } 
+    }
+    @media(max-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        img{
+            width: 65%;
+        } 
+    }
+    @media(max-width: 576px){
+        grid-template-columns: 1fr 1fr;
+        img{
+            width: 53%;
+        } 
+    }
+
 }
