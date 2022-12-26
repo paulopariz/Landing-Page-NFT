@@ -265,7 +265,6 @@
 
     .live-aucition {
         padding: 19px 0px;
-        gap: 22px;
         position: relative;
         width: 100%;
         height: 184px;
@@ -278,9 +277,7 @@
             line-height: 146px;
             letter-spacing: -0.02em;
             -webkit-text-stroke-width: 5px;
-            /* largura da borda */
             -webkit-text-stroke-color: #fff;
-            /* cor da borda */
             -webkit-text-fill-color: transparent;
 
             div {
@@ -294,6 +291,24 @@
                     gap: 50px;
                     font-family: 'Poppins', sans-serif;
                 }
+            }
+        }
+
+        @media(max-width: 768px){
+            height: 146px;
+
+            marquee{
+                font-size: 88px;
+                line-height: 110px;
+            }
+        }
+
+        @media(max-width: 576px){
+            height: 115px;
+
+            marquee{
+                font-size: 72px;
+                line-height: 70px;
             }
         }
     }
@@ -315,10 +330,78 @@
                 }
             }
         }
-    }
+        @media(max-width: 1200px){
+            .container{
+                section{
+                    .cards-create-nft{
+                        gap: 7px;
+                        width: 19.5rem;
+                        
+                            h2{
+                                font-size: 21px;
+                            }
+                            p{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 992px){
+                .container{
+                    section{
+                        display: grid;
+                        gap: 20px;
+
+                        .cards-create-nft{
+                            gap: 17px;
+                            margin: auto;
+                            width: 90%;
+                            padding: 35px;
+                            h2{
+                                font-size: 25px;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 576px){
+                .container{
+                    section{
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .cards-create-nft{
+                            gap: 13px;
+                            width: 95%;
+                            height: 246px;
+                            padding: 25px;
+
+                            img{
+                                width: 34px;
+                                height: 34px;
+                            }
+
+                            h2{
+                                font-size: 21px;
+                            }
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    }
+            }
+        }
+   
 
 
- .live-aucition, .partTwo, .cardsMen, .join, footer {
+ .cardsMen, .join, footer {
     display: none;
 }
 </style>
