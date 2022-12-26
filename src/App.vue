@@ -126,28 +126,28 @@
             data(){
                 return{
                     cards: [{
-                        "card": require("../src/assets/images/Cards/card1.png"),
+                        "card": require("../src/assets/images/Cards/card1.svg"),
                         },
                         {
-                        "card": require("../src/assets/images/Cards/card2.png"),
+                        "card": require("../src/assets/images/Cards/card2.svg"),
                         },
                         {
-                        "card": require("../src/assets/images/Cards/card3.png"),
+                        "card": require("../src/assets/images/Cards/card3.svg"),
                         },
                         {
-                        "card": require("../src/assets/images/Cards/card4.png"),
+                        "card": require("../src/assets/images/Cards/card4.svg"),
                         },
                         {
-                        "card": require("../src/assets/images/Cards/card5.png"),
+                        "card": require("../src/assets/images/Cards/card5.svg"),
                         },
                         {
-                        "card": require("../src/assets/images/Cards/card6.png"),
+                        "card": require("../src/assets/images/Cards/card6.svg"),
                         },
                         {
-                        "card": require("../src/assets/images/Cards/card7.png"),
+                        "card": require("../src/assets/images/Cards/card7.svg"),
                         },
                         {
-                        "card": require("../src/assets/images/Cards/card8.png"),
+                        "card": require("../src/assets/images/Cards/card8.svg"),
                         },
                         
                     ]
@@ -218,7 +218,47 @@
 
             button {
                 @include buttons;
+            }
+        }
 
+        @media(max-width: 840px){
+            .cards{
+                .container{
+                    grid-template-columns: 1fr 1fr 1fr;
+                   
+                    img{
+                        margin: auto;
+                    }
+                }
+                button {
+                    width: 100% !important;
+                    height: 58px;
+                    font-size: 15px;
+                }
+            }
+        }
+        @media(max-width: 720px){
+                .cards{
+                    .container{
+                        grid-template-columns: 1fr 1fr;
+                        gap: 30px;
+                    }
+                    
+            }
+        }
+        @media(max-width: 576px){
+            .cards{
+                .container{
+                    grid-template-columns: 1fr;
+                    img{
+                        width: 100%;
+                    }
+                }
+                button {
+                    width: 327px;
+                    height: 51px;
+                    font-size: 15px;
+                }
             }
         }
     }
