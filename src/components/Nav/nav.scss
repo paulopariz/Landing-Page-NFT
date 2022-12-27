@@ -61,7 +61,7 @@ nav {
 
                     .contactDrop {
                         display: none;
-                        color: #1C51FE;                      
+                        color: #1C51FE;
                     }
                 }
             }
@@ -89,39 +89,43 @@ nav {
         .contact {
             display: none;
         }
-        .container{
-            section{
-                .NavMobile{
-                    .drop{
+
+        .container {
+            section {
+                .NavMobile {
+                    .drop {
                         height: 17.0625rem;
 
-                        .contactDrop{
+                        .contactDrop {
                             display: block;
                         }
-                    } 
+                    }
                 }
             }
         }
     }
-    @media(max-width: 576px){
-        .container{
-            section{
-                .NavMobile{
-                    .drop{
+
+    @media(max-width: 576px) {
+        .container {
+            section {
+                .NavMobile {
+                    .drop {
                         right: 20px;
                     }
                 }
             }
         }
     }
-    @media(max-width: 484px){
-        img{
+
+    @media(max-width: 484px) {
+        img {
             width: 9.0625rem;
         }
-        .container{
-            section{
-                .NavMobile{
-                    button img{
+
+        .container {
+            section {
+                .NavMobile {
+                    button img {
                         width: 2.1875rem;
                     }
                 }

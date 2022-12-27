@@ -90,8 +90,18 @@
 
     @media(max-width: 768px) {
       display: flex;
-      .container{
+
+      .container {
         margin-top: 15px;
+
+        .swiper-wrapper {
+          .swiper-slide {
+            font-size: 11px;
+            padding: 0;
+            width: 111px !important;
+          }
+        }
+
       }
     }
 

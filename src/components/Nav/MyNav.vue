@@ -2,21 +2,21 @@
 
   <nav>
     <div class="container">
-     <img src="../../assets/images/ApolloNFT.svg" alt="">
+      <img src="../../assets/images/ApolloNFT.svg" alt="">
 
-     <div>
-      <ul>
-        <li>Drop</li>
-        <li>Marketplace</li>
-        <li>Creator</li>
-        <li>Community</li>
-      </ul>
-     </div>
+      <div>
+        <ul>
+          <li>Drop</li>
+          <li>Marketplace</li>
+          <li>Creator</li>
+          <li>Community</li>
+        </ul>
+      </div>
 
-     <section>
-       <button class="contact">Contact Us</button>
-       <NavMobile />
-     </section>
+      <section>
+        <button class="contact">Contact Us</button>
+        <NavMobile />
+      </section>
     </div>
   </nav>
 
@@ -24,18 +24,18 @@
 </template>
 
 <script>
-import NavMobile from './NavMobile.vue'
+  import NavMobile from './NavMobile.vue'
 
   export default {
     name: 'MyNav',
 
-    components:{
+    components: {
       NavMobile
     },
 
-    data(){
-      return{
-        
+    data() {
+      return {
+
       }
     }
   }

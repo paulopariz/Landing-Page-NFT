@@ -14,15 +14,9 @@
                 <div class="cards">
 
                     <div class="container">
-                        <div
-                        v-for="(obj) in cards"
-                        v-bind:key="obj"
-                        >
-                        
-                            <img
-                            v-if="obj.card"
-                            :src="obj.card"
-                            >
+                        <div v-for="(obj) in cards" v-bind:key="obj">
+
+                            <img v-if="obj.card" :src="obj.card">
                         </div>
                     </div>
 
@@ -67,24 +61,27 @@
                 <div class="cards-create-nft">
                     <img src="../src/assets/images/Wallet.svg">
                     <h2>Connect Wallet</h2>
-                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
+                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been
+                        striving towards.</p>
                 </div>
                 <div class="cards-create-nft">
                     <img src="../src/assets/images/Buy.svg">
                     <h2>NFT Marketplace</h2>
-                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
+                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been
+                        striving towards.</p>
                 </div>
                 <div class="cards-create-nft">
                     <img src="../src/assets/images/Category.svg">
                     <h2>Collect NFT</h2>
-                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
+                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been
+                        striving towards.</p>
                 </div>
             </section>
 
         </div>
 
 
-        
+
 
     </div>
 
@@ -115,47 +112,46 @@
         name: 'App',
 
         components: {
-    MyNav,
-    MyHeader,
-    MySlide,
-    CardMen,
-    JoinCommunity,
-    MyFooter,
-},
+            MyNav,
+            MyHeader,
+            MySlide,
+            CardMen,
+            JoinCommunity,
+            MyFooter,
+        },
 
-            data(){
-                return{
-                    cards: [{
+        data() {
+            return {
+                cards: [{
                         "card": require("../src/assets/images/Cards/card1.svg"),
-                        },
-                        {
+                    },
+                    {
                         "card": require("../src/assets/images/Cards/card2.svg"),
-                        },
-                        {
+                    },
+                    {
                         "card": require("../src/assets/images/Cards/card3.svg"),
-                        },
-                        {
+                    },
+                    {
                         "card": require("../src/assets/images/Cards/card4.svg"),
-                        },
-                        {
+                    },
+                    {
                         "card": require("../src/assets/images/Cards/card5.svg"),
-                        },
-                        {
+                    },
+                    {
                         "card": require("../src/assets/images/Cards/card6.svg"),
-                        },
-                        {
+                    },
+                    {
                         "card": require("../src/assets/images/Cards/card7.svg"),
-                        },
-                        {
+                    },
+                    {
                         "card": require("../src/assets/images/Cards/card8.svg"),
-                        },
-                        
-                    ]
-                }
-            }
+                    },
 
+                ]
+            }
         }
-   
+
+    }
 </script>
 
 <style lang="scss">
@@ -221,15 +217,16 @@
             }
         }
 
-        @media(max-width: 840px){
-            .cards{
-                .container{
+        @media(max-width: 840px) {
+            .cards {
+                .container {
                     grid-template-columns: 1fr 1fr 1fr;
-                   
-                    img{
+
+                    img {
                         margin: auto;
                     }
                 }
+
                 button {
                     width: 100% !important;
                     height: 58px;
@@ -237,26 +234,31 @@
                 }
             }
         }
-        @media(max-width: 720px){
-                .cards{
-                    .container{
-                        grid-template-columns: 1fr 1fr;
-                        gap: 30px;
-                    }
-                    
+
+        @media(max-width: 720px) {
+            .cards {
+                .container {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 30px;
+                }
+
             }
         }
-        @media(max-width: 576px){
+
+        @media(max-width: 576px) {
             margin: auto;
             margin-top: 7rem;
             width: 95%;
-            .cards{
-                .container{
+
+            .cards {
+                .container {
                     grid-template-columns: 1fr;
-                    img{
+
+                    img {
                         width: 100%;
                     }
                 }
+
                 button {
                     width: 95% !important;
                     height: 51px;
@@ -297,19 +299,19 @@
             }
         }
 
-        @media(max-width: 768px){
+        @media(max-width: 768px) {
             height: 146px;
 
-            marquee{
+            marquee {
                 font-size: 88px;
                 line-height: 110px;
             }
         }
 
-        @media(max-width: 576px){
+        @media(max-width: 576px) {
             height: 115px;
 
-            marquee{
+            marquee {
                 font-size: 72px;
                 line-height: 70px;
             }
@@ -319,90 +321,96 @@
 
     .partTwo {
         margin-top: 9.375rem;
-        .container{   
+
+        .container {
             h1 {
                 @include titles;
             }
-            section{
+
+            section {
                 margin-top: 2.1875rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                .cards-create-nft{
+
+                .cards-create-nft {
                     @include createNft;
                 }
             }
         }
-        @media(max-width: 1200px){
-            .container{
-                section{
-                    .cards-create-nft{
+
+        @media(max-width: 1200px) {
+            .container {
+                section {
+                    .cards-create-nft {
                         gap: 7px;
                         width: 19.5rem;
-                        
-                            h2{
-                                font-size: 21px;
-                            }
-                            p{
-                                font-size: 17px;
-                            }
+
+                        h2 {
+                            font-size: 21px;
+                        }
+
+                        p {
+                            font-size: 17px;
                         }
                     }
                 }
-            }
-
-            @media(max-width: 992px){
-                .container{
-                    section{
-                        display: grid;
-                        gap: 20px;
-
-                        .cards-create-nft{
-                            gap: 17px;
-                            margin: auto;
-                            width: 90%;
-                            padding: 35px;
-                            h2{
-                                font-size: 25px;
-                            }
-                            p{
-                                font-size: 20px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            @media(max-width: 576px){
-                margin-top: 7rem;
-                .container{
-                    section{
-                        flex-direction: column;
-                        justify-content: center;
-
-                        .cards-create-nft{
-                            gap: 13px;
-                            width: 95%;
-                            height: 246px;
-                            padding: 25px;
-
-                            img{
-                                width: 34px;
-                                height: 34px;
-                            }
-
-                            h2{
-                                font-size: 21px;
-                            }
-                            p{
-                                font-size: 18px;
-                            }
-                        }
-                    }
-                    }
             }
         }
-   
 
+        @media(max-width: 992px) {
+            .container {
+                section {
+                    display: grid;
+                    gap: 20px;
 
+                    .cards-create-nft {
+                        gap: 17px;
+                        margin: auto;
+                        width: 90%;
+                        padding: 35px;
+
+                        h2 {
+                            font-size: 25px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 576px) {
+            margin-top: 7rem;
+
+            .container {
+                section {
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .cards-create-nft {
+                        gap: 13px;
+                        width: 95%;
+                        height: 246px;
+                        padding: 25px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                        }
+
+                        h2 {
+                            font-size: 21px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 </style>

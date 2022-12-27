@@ -98,6 +98,12 @@ header {
             .title{
                 h1{
                     font-size: 4.4375rem;
+                    span {
+                        background: #1C51FE;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;              
+                    }
                 }
             }
             .button-text{
