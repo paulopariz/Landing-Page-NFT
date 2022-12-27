@@ -405,7 +405,4 @@
    
 
 
- footer {
-    display: none;
-}
 </style>

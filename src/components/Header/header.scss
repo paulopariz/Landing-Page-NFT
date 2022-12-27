@@ -24,9 +24,13 @@
     z-index: -1;
     top: 3935px;
     left: -173px;
-
     background: rgba(34, 86, 218, 0.59);
-
+    @media(max-width: 1200px){
+        top: 249.8125rem;
+    }
+    @media(max-width: 1200px){
+        top: 268.5625rem;
+    }
 }
 
 header {
