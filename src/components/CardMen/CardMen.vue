@@ -3,7 +3,7 @@
     <div class="cardsMen">
         <div class="container">
             <h1>Creator of The Week</h1>
-            <section>
+            <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <div
                 v-for="(obj) in names"
                 v-bind:key="obj">

@@ -1,6 +1,8 @@
 <template>
     <div class="NavMobile">
         <button
+            data-aos="flip-right"
+            data-aos-delay="150"
             type="button"
             @click="toggle()"
         >

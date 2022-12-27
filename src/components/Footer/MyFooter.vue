@@ -1,9 +1,13 @@
 <template>
     <footer>  
         <div class="container">
-            <div class="left">
-                <img src="../../assets/images/ApolloNFT.svg" alt="LOGO" class="logo">
-                <p>{{ text }}</p>
+            <div class="left" >
+                <img src="../../assets/images/ApolloNFT.svg" 
+                    alt="LOGO" 
+                    class="logo"
+                    data-aos="fade-right"
+                >
+                <p data-aos="fade-right" data-aos-delay="150">{{ text }}</p>
                 <div class="icons">
                     <div
                         v-for="(obj) in footer"
@@ -13,30 +17,32 @@
                             v-if="obj"
                             :src="obj.logo"
                             :alt="obj.name"
+                            data-aos="fade-right"
+                            data-aos-delay="200"
                         >
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <ul>
+            <div class="right" >
+                <ul data-aos="fade-up">
                     <h2>Marketplace</h2>
                     <li>Buy Product</li>
                     <li>Sell Product</li>
                     <li>Our Creator</li>
                 </ul>
-                <ul>
+                <ul data-aos="fade-up" data-aos-delay="150">
                     <h2>Resources</h2>
                     <li>About Us</li>
                     <li>Event</li>
                     <li>Tutorial</li>
                 </ul>
-                <ul>
+                <ul data-aos="fade-up" data-aos-delay="200">
                     <h2>Company</h2>
                     <li>Media</li>
                     <li>Blog</li>
                     <li>Pricing</li>
                 </ul>
-                <ul>
+                <ul data-aos="fade-up" data-aos-delay="250">
                     <h2>Legal</h2>
                     <li>Terms</li>
                     <li>Privacy</li>

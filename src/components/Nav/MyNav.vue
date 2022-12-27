@@ -1,11 +1,12 @@
 <template>
 
-  <nav>
+  <nav >
     <div class="container">
-      <img src="../../assets/images/ApolloNFT.svg" alt="">
+      <img src="../../assets/images/ApolloNFT.svg" 
+      data-aos="fade-right">
 
       <div>
-        <ul>
+        <ul data-aos="fade-down">
           <li>Drop</li>
           <li>Marketplace</li>
           <li>Creator</li>
@@ -14,7 +15,10 @@
       </div>
 
       <section>
-        <button class="contact">Contact Us</button>
+        <button class="contact" 
+        data-aos="fade-left">
+          Contact Us
+        </button>
         <NavMobile />
       </section>
     </div>

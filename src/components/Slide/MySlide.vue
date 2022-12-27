@@ -1,6 +1,6 @@
 <template>
 
-  <div class="desktop">
+  <div class="desktop" data-aos="fade-right">
     <div class="container">
       <button>Hope Ape</button>
       <button>Abstract</button>
@@ -10,7 +10,7 @@
     </div>
   </div>
 
-  <div class="mobile">
+  <div class="mobile" data-aos="fade-right">
     <div class="container">
       <swiper :slidesPerView="2.5" :freeMode="true" :pagination="{clickable: false,}" :modules="modules"
         class="mySwiper">
