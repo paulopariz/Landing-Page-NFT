@@ -29,7 +29,13 @@
         top: 249.8125rem;
     }
     @media(max-width: 1200px){
-        top: 268.5625rem;
+        top: 250.5625rem;
+    }
+    @media(max-width: 992px){
+        top: 270.5625rem;
+    }
+    @media(max-width: 840px){
+        top: 300.5625rem
     }
 }
 

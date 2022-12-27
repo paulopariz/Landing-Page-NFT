@@ -5,13 +5,19 @@
       <img src="../../assets/images/ApolloNFT.svg" 
       data-aos="fade-right">
 
-      <div>
-        <ul data-aos="fade-down">
-          <li>Drop</li>
-          <li>Marketplace</li>
-          <li>Creator</li>
-          <li>Community</li>
-        </ul>
+      <div 
+        v-for="(obj) in nav"
+        v-bind:key="obj"
+      >
+
+        <div>
+          <ul data-aos="fade-down">
+
+            <li>{{ obj.li }}</li>
+            
+          </ul>
+        </div>
+
       </div>
 
       <section>
@@ -39,7 +45,19 @@
 
     data() {
       return {
-
+        nav: [{
+          "li": "Drop"
+        },
+        {
+          "li": "Marketplace"
+        },
+        {
+          "li": "Creator"
+        },
+        {
+          "li": "Community"
+        }
+      ]
       }
     }
   }

@@ -34,13 +34,13 @@
         <div class="right">
             <img 
                 src="../../assets/images/imgHeader.png"
-                data-aos="fade-down-left"
+                data-aos="fade-left"
             >
         </div>
 
     </header>
 
-    <div class="numbers" data-aos="fade-right">
+    <div class="numbers" >
         <ul >
             <li>
                 <span>Artwork</span>

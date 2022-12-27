@@ -12,7 +12,7 @@
 
   <div class="mobile" data-aos="fade-right">
     <div class="container">
-      <swiper :slidesPerView="2.5" :freeMode="true" :pagination="{clickable: false,}" :modules="modules"
+      <swiper :slidesPerView="3" :freeMode="true" :pagination="{clickable: false,}" :modules="modules"
         class="mySwiper">
         <swiper-slide>Hope Ape</swiper-slide>
         <swiper-slide>Abstract</swiper-slide>

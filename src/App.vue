@@ -65,26 +65,23 @@
         <div class="container">
             <h1 data-aos="fade-down">Create Your Sell NFT</h1>
 
-            <section>
-                <div class="cards-create-nft" data-aos="fade-up"
-                    data-aos-anchor-placement="bottom-bottom">
-                    <img src="../src/assets/images/Wallet.svg">
-                    <h2>Connect Wallet</h2>
-                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
-                </div>
-                <div class="cards-create-nft" data-aos="fade-up"
-                    data-aos-anchor-placement="bottom-bottom">
-                    <img src="../src/assets/images/Buy.svg">
-                    <h2>NFT Marketplace</h2>
-                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
-                </div>
-                <div class="cards-create-nft" data-aos="fade-up"
-                    data-aos-anchor-placement="bottom-bottom">
-                    <img src="../src/assets/images/Category.svg">
-                    <h2>Collect NFT</h2>
-                    <p>This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
-                </div>
-            </section>
+            
+                <section>
+
+                    <div 
+                        v-for="(obj) in createCards"
+                        v-bind:key="obj"
+                    >
+                        <div class="cards-create-nft" data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
+                            <img :src="obj.img">
+                            <h2>{{ obj.title }}</h2>
+                            <p>{{ obj.text }}</p>
+                        </div>
+                    
+                    </div> 
+                </section>
+           
 
         </div>
 
@@ -158,7 +155,24 @@
                         "card": require("../src/assets/images/Cards/card8.svg"),
                         },
                         
-                    ]
+                    ],
+
+                    createCards: [{
+                        "img": require("../src/assets/images/Buy.svg"),
+                        "title": "Connect Wallet",
+                        "text": "This growth plan will help you reach your resolutions and achieve the goals you have been striving towards."
+                    },
+                    {
+                        "img": require("../src/assets/images/Wallet.svg"),
+                        "title": "NFT Marketplace",
+                        "text": "This growth plan will help you reach your resolutions and achieve the goals you have been striving towards."
+                    },
+                    {
+                        "img": require("../src/assets/images/Category.svg"),
+                        "title": "Collect NFT",
+                        "text": "This growth plan will help you reach your resolutions and achieve the goals you have been striving towards."
+                    }
+                ]
                 }
             }
 
