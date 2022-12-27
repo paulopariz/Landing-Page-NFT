@@ -27,13 +27,14 @@
     .eclipseJoin2 {
         @include eclipses;
         width: 542px;
-        left: 329px;
+        left: 20.5625rem;
         top: 144px;
         border: 1px solid #FFFFFF;
         background: none;
         filter: blur(0px);
         float: none;
         z-index: 0;
+         
     }
 
     section {
@@ -89,5 +90,132 @@
             top: 7.6875rem;
      
         }
+    }
+    @media(max-width: 1200px){
+        width: 930px;
+        .eclipseJoin2{
+            left: 10.5rem;
+        }
+        .eclipseJoin3{
+            left: 42.0625rem;
+        .btc{
+            width: 10.4844rem;
+        }
+        .eth{
+            width: 6.25rem;
+            left: 0.3rem;
+        }
+        .bnb{
+            left: 8.25rem;
+            top: 9.6875rem;
+            width: 7.5rem;
+        }
+        }
+        section{
+            h1{
+                font-size: 2.8rem;
+                left: 13.1rem;
+            }
+            button{
+                left: 23.2rem;
+            }
+        }
+    } 
+    @media(max-width: 992px){
+        width: 730px;
+        .eclipseJoin2{
+            left: 11.5rem;
+            height: 21.25rem;
+            width: 21.25rem;
+        }
+        .eclipseJoin3{
+            left: 33.0625rem;
+        .btc{
+            width: 9.4844rem;
+        }
+        .eth{
+            width: 5.25rem;
+        }
+        .bnb{
+            left: 6.25rem;
+            top: 9.6875rem;
+            width: 6.5rem;
+        }
+        }
+        section{
+            h1{
+                font-size: 2.4rem;
+                left: 10.1rem;
+            }
+            button{
+                left: 18.2rem;
+                width: 7.875rem;
+                height: 2.6875rem;
+                font-size: 11px;
+            }
+        }
+    } 
+     
+    @media(max-width: 768px){
+        width: 530px;
+        height: 14.125rem;        
+        background: #1336A9;
+        .eclipseJoin1{
+            background: #0E297F;
+        }
+        .eclipseJoin2{
+            left: 5.4rem;
+            height: 22.25rem;
+            width: 22.25rem;
+            top: 115px;
+        }
+        .eclipseJoin3{
+            display: none;
+        }
+        section{
+            h1{
+                font-size: 2rem;
+                left: 6.6rem;
+                top: 3.375rem;
+            }
+            button{
+                top: 8.5rem;                
+                left: 12.625rem;
+                background-color: #fff;
+            }
+        }
+    }  
+
+    @media(max-width: 574px){
+        width: 345px;
+        height: 211px;
+        .eclipseJoin1{
+            width: 227px;
+            height: 227px;
+        }
+        section{
+            h1{
+                width: 251px;
+                height: 29px;
+                left: 61px;
+                top: 32px;
+                font-size: 22px;                
+                line-height: 26px;
+            }
+            button{
+                position: absolute;
+                width: 299px;
+                height: 46px;
+                left: 23px;
+                top: 106px;
+            }
+        }      
+        .eclipseJoin2{
+            width: 257px;
+            height: 257px;
+            left: 46px;
+            top: 88px;
+
+        }     
     }
 }

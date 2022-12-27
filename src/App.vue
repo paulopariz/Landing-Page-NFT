@@ -247,6 +247,9 @@
             }
         }
         @media(max-width: 576px){
+            margin: auto;
+            margin-top: 7rem;
+            width: 95%;
             .cards{
                 .container{
                     grid-template-columns: 1fr;
@@ -255,7 +258,7 @@
                     }
                 }
                 button {
-                    width: 327px;
+                    width: 95% !important;
                     height: 51px;
                     font-size: 15px;
                 }
@@ -315,7 +318,7 @@
 
 
     .partTwo {
-        margin-top: 150px;
+        margin-top: 9.375rem;
         .container{   
             h1 {
                 @include titles;
@@ -371,6 +374,7 @@
             }
 
             @media(max-width: 576px){
+                margin-top: 7rem;
                 .container{
                     section{
                         flex-direction: column;
@@ -401,7 +405,7 @@
    
 
 
- .cardsMen, .join, footer {
+ footer {
     display: none;
 }
 </style>
