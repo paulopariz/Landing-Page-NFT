@@ -2,7 +2,7 @@
     
     <div class="cardsMen">
         <div class="container">
-            <h1>Creator of The Week</h1>
+            <h1 data-aos="fade-down">Creator of The Week</h1>
             <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <div
                 v-for="(obj) in names"
